@@ -32,7 +32,7 @@ def search_rfc( query ):
 
     # params = { "q":query }
     # response = urllib2.urlopen( "https://m.zhihu.com/search?"+urllib.urlencode(params) ).read().split( "\n" )
-    response = urllib2.urlopen( 'https://m.zhihu.com/search?q=s%' % query ).read()
+    response = urllib2.urlopen( 'https://m.zhihu.com/search?q=%s' % query ).read()
 
     print(response)
     # response=response.decode('utf-8')
